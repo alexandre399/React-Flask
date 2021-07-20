@@ -1,6 +1,6 @@
 ## 프로젝트 개요
 :seedling: Flask와 React 연동
-<br>:tulip: pylint와 eslint 적용한 Workflow 생성 (:heavy_check_mark: 예정)
+<br>:heavy_check_mark: pylint와 eslint 적용한 Workflow 생성
 <br><br>
 
 ## 실행방법
