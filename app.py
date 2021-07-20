@@ -3,11 +3,13 @@ from flask_restful import Api
 from flask_cors import CORS
 from api.Hello import Hello
 
-app = Flask(__name__, static_url_path='', static_folder='frontend/build') 
-CORS(app) 
+app = Flask(__name__, static_url_path="", static_folder="frontend/build")
+CORS(app)
 api = Api(app)
-api.add_resource(Hello, '/hello/')
+api.add_resource(Hello, "/hello/")
+
 
 @app.route("/")
 def serve():
-    return send_from_directory(app.static_folder,'index.html')
+    """React 와 연동하기"""
+    return send_from_directory(app.static_folder, "index.html")
